@@ -1,3 +1,5 @@
+// A programme that determines the brand of a credit card using the credit card number, provided it is a valid credit card
+
 //includes
 #include <stdio.h>
 #include <cs50.h>
