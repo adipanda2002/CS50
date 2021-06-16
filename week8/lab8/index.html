@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+                let correct_button = document.querySelector('.correct');
+                correct_button.addEventListener('click', function(){
+                    correct_button.style.backgroundColor = 'green';
+                    document.querySelector('#response1').innerHTML = 'Correct!';
+                });
+                
+                let incorrect_buttons = document.querySelectorAll('.incorrect');
+                for(let i = 0; i < incorrect_buttons.length; i++)
+                {
+                    incorrect_buttons[i].addEventListener('click', function(){
+                        incorrect_buttons[i].style.backgroundColor = 'red';
+                        document.querySelector('#response1').innerHTML = 'Incorrect!';
+                    });
+                }
+                
+                
+                document.querySelector('#check').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value === 'Gianni Infantino')
+                    {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#response1').innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#response2').innerHTML = 'Incorrect!';
+                    }
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Which footballer has won the most Ballon D'ors?</h3>
+                <button class="incorrect">Cristiano Ronaldo</button>
+                <button class="incorrect">Johan Cruyff</button>
+                <button class="incorrect">Marco Van Basten</button>
+                <button class="incorrect">Micheal Platini</button>
+                <button class="correct">Lionel Messi</button>
+                
+                <p id="response1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>Who is the President of the FIFA?</h3>
+                <input type="text"></input>
+                <button id="check">Check Answer</button>
+                
+                <p id="response2"></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
