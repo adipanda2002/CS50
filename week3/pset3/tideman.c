@@ -1,5 +1,6 @@
 //A programme that runs a tideman election
 
+// Usage: ./tideman [candidate ...]
 
 //includes
 #include <cs50.h>
