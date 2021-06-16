@@ -1,3 +1,5 @@
+// A programme that allows the user to apply various filters on their images
+
 #include <getopt.h>
 #include <stdio.h>
 #include <stdlib.h>
