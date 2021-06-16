@@ -1,0 +1,30 @@
+sort1 uses: Bubble Sort
+
+How do you know?: For poorly sorted cases (random and reversed), runtime is high. However, for the sorted case the runtime is low, suggesting no "swaps" were made between bubbles.
+
+Runtimes (to 3.d.p)(s):
+random5000: 0.099 random10000: 0.495 random50000: 15.266
+reversed5000: 0.055 reversed10000: 0.923 reversed50000: 12.214
+sorted5000: 0.011 sorted10000: 0.019 sorted50000: 3.626
+
+
+
+sort2 uses: Merge Sort
+
+How do you know?: Smallest runtimes across all tests.
+
+Runtimes (to 3.d.p)(s):
+random5000: 0.011 random10000: 0.058 random50000: 6.272
+reversed5000: 0.011 reversed10000: 0.075 reversed50000: 5.836
+sorted5000: 0.010 sorted10000: 0.021 sorted50000: 3.170
+
+
+
+sort3 uses: Selection Sort
+
+How do you know?: Consistent runtimes irrespective of the extent to which data is sorted. Suggests that the program repeats over and over again even though the data may already be sorted.
+
+Runtimes (to 3.d.p)(s):
+random5000: 0.034 random10000: 0.161 random50000: 9.142
+reversed5000: 0.034 reversed10000: 0.195 reversed50000: 7.522
+sorted5000: 0.033 sorted10000: 0.217 sorted50000: 9.769
