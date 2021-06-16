@@ -10,9 +10,11 @@ int main(void)
     do
     {
         n = get_int("Please select a height (1-8).\n");
+        // prompts the user for a pyramid height
     }
     while (n < 1 || n > 8);
-
+    
+    // Using a for loop to print each row of the desired pyramind
     for (i = 0; i < n; i++)
     {
         printf(' ', n - 1 - i);
