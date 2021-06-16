@@ -1,4 +1,4 @@
-// A programme that allows the user to apply various filters on their images
+// A programme that allows the user to apply various filters on their images (blur, edges, grayscale, reflect)
 
 #include <getopt.h>
 #include <stdio.h>
